@@ -2,11 +2,8 @@ package com.virtualkey.services;
 
 import java.io.DataInputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
 
 public class FileServices {
 	
@@ -69,8 +66,3 @@ public class FileServices {
 	}
 
 }}
-//actions to do the below
-//1.View files
-//2.Search files
-//3. Add new file
-//4.Delete file
