@@ -8,7 +8,7 @@ import com.virtualkey.util.SubMenu;
 
 public class DemoTest {
 
-	public static void main(String[] args)  {	
+	public static void main(String[] args) throws Exception  {	
 		Scanner sc = new Scanner(System.in);
 		String con;
 		MainMenu mm = new MainMenu();
@@ -22,7 +22,6 @@ public class DemoTest {
 			case 1:try {
 					mm.DisplayFiles();
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			break;

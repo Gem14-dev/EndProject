@@ -2,18 +2,26 @@ package com.virtualkey.util;
 
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 
 public class MainMenu {
 
-	public void DisplayFiles() throws Exception {
-		File directorypath = new File ("D:/home/gemmadeanvodafo/Desktop/GitProject/ProjectFiles"); 
-		String contents[] = directorypath.list();
-	      System.out.println("List of files and directories in the specified directory:");
-	      for(int i=0; i<contents.length; i++) {
-	         System.out.println(contents[i]);
+	public void DisplayFiles() {
+		File folder = new File("/home/gemmadeanvodafo/Desktop/GitProject/VirtualKeyApp/");
+        String[] listOfFiles = folder.list();
+        Arrays.sort(listOfFiles);
+       for (String file : listOfFiles) {
+                System.out.println(file);
+
+            }
+            
+
 	         
-	}
+	
 
 	
 		
