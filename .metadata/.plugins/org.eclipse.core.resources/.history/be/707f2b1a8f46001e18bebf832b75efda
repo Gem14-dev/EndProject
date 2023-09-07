@@ -1,0 +1,47 @@
+package com.virtualkey.util;
+
+import java.util.Scanner;
+
+import com.virtualkey.services.FileServices;
+
+public class SubMenu {
+
+	public void SubMenuList() {
+		Scanner sc = new Scanner(System.in);
+		String con;
+		FileServices fs = new FileServices ();
+		int key;
+		int choice;{
+		do {
+			System.out.println("1.Search for a file 2:Add a new file 3:Delete a file 4:Back to main menu");
+			System.out.println("Please enter your choice");
+			choice = sc.nextInt();
+			switch(choice) {
+			case 1:fs.SearchFiles();
+			break;
+			case 2:fs.AddFile();
+			break;
+			case 3: fs.DeleteFile();
+			break;
+			case 4:
+			}
+			System.out.println("do you want to continue (y/n)?");
+			con = sc.next();
+		}while (con.equalsIgnoreCase("y"));
+		
+		System.out.println("Finished. Thank you");
+		
+		}
+	}
+	
+	
+	
+	
+
+
+
+//1.View files
+//2.Search files
+//3. Add new file
+//4.Delete file
+//5. back to main menu

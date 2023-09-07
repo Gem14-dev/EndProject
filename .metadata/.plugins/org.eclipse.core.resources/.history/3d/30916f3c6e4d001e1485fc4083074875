@@ -1,0 +1,60 @@
+package com.virtualkey.util;
+
+
+import java.util.Scanner;
+
+import com.virtualkey.services.DisplayFiles;
+
+
+public class MainMenu  {
+	
+	public static void MainMenu() {
+	
+	Scanner sc = new Scanner(System.in);
+	String con;
+	DisplayFiles df = new DisplayFiles();
+	SubMenu sm = new SubMenu();
+	int choice;{
+	do {
+		System.out.println("1.Display all files is ascending order");
+		System.out.println("2:File options");
+		System.out.println("3:Exit");
+		System.out.println("Please enter your choice");
+		choice = sc.nextInt();
+		switch(choice) {
+		case 1:df.DisplayFiles();
+		break;
+		case 2:try {
+				sm.SubMenuList();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		break;
+		case 3:
+			System.out.println("You have selected to exit, are you sure?");
+		break;
+		default: System.out.println("Wrong choice, please try again");
+		}
+		System.out.println("Do you want to go back to the main menu (y/n)?");
+		con = sc.next();
+	}while (con.equalsIgnoreCase("y"));
+	
+	System.out.println("Finished. Thank you");
+	System.exit(0);
+	
+	sc.close();
+
+
+            }}}
+            
+
+	         
+	
+
+	
+		
+	
+
+		
+
+	

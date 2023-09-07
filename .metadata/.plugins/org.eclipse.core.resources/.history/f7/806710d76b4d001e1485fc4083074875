@@ -1,0 +1,11 @@
+package com.virtualkey.services;
+
+import java.io.File;
+
+public class DisplayFiles {
+	File folder = new File("/home/gemmadeanvodafo/Desktop/GitProject/VirtualKeyApp/");
+  String[] listOfFiles = folder.list();
+  Arrays.sort(listOfFiles);
+ for (String file : listOfFiles) {
+          System.out.println(file);
+}}

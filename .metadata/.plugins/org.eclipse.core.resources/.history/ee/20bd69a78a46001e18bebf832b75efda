@@ -1,0 +1,8 @@
+package com.virtualkey.util;
+
+public class MainMenu {
+
+}
+//1. Display files
+//2. go to submenu menu
+//3.exit	

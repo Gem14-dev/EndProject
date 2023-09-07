@@ -1,0 +1,36 @@
+package com.virtualkey.util;
+
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public class MainMenu {
+
+	public void DisplayFiles() {
+		File folder = new File("/home/gemmadeanvodafo/Desktop/GitProject");
+        File[] listOfFiles = folder.listFiles();
+
+        
+       for (File file : listOfFiles) {
+            if (file.isFile()) {
+                System.out.println(file.getName());
+            }
+//            	         Collections.sort((List<String>)file);
+//            	         for (File files:listOfFiles) {
+//            	        	 System.out.println (files+" ");
+	         }
+	         
+	
+
+	
+		
+	}}
+
+		
+
+//1. Display files
+//2. go to submenu menu
+//3.exit	

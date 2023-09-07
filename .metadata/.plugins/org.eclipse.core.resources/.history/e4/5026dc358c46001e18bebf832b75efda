@@ -1,0 +1,18 @@
+package com.virtualkey.util;
+
+public class MainMenu {
+
+	public void DisplayFiles() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void SubMenu() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+//1. Display files
+//2. go to submenu menu
+//3.exit	

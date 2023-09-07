@@ -1,0 +1,23 @@
+package com;
+
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+public class DemoTest {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		FileInputStream fis = new FileInputStream("D:\\JPA Crud Operation\\JPATest\\src\\main\\java\\com\\bean\\Product.java");
+		FileOutputStream fos = new FileOutputStream("demo.txt");
+		int ch;
+		while((ch=fis.read()) != -1) {  // EOF is equal to -1 
+			fos.write(ch);
+		}
+		fis.close();
+		fos.close();
+		System.out.println("file copied...");
+	}
+
+}
