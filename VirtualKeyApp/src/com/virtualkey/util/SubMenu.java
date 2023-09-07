@@ -9,7 +9,6 @@ public class SubMenu {
 
 	public void SubMenuList() throws Exception {
 		Scanner sc = new Scanner(System.in);
-		FileServices fs = new FileServices ();
 		int choice;{
 		while (true){
 			System.out.println("1.Search for a file");
@@ -20,11 +19,11 @@ public class SubMenu {
 			System.out.println("Please enter your choice");
 			choice = sc.nextInt();
 			switch(choice) {
-			case 1:fs.SearchFiles();
+			case 1:FileServices.SearchFiles();
 			break;
-			case 2:fs.AddFile();
+			case 2:FileServices.AddFile();
 			break;
-			case 3: fs.DeleteFile();
+			case 3: FileServices.DeleteFile();
 			break;
 			case 4:
 				return;

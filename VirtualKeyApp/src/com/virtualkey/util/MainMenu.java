@@ -12,7 +12,6 @@ public class MainMenu  {
 	
 	Scanner sc = new Scanner(System.in);
 	String con;
-	DisplayFiles df = new DisplayFiles();
 	SubMenu sm = new SubMenu();
 	int choice;{
 	do {
@@ -22,7 +21,7 @@ public class MainMenu  {
 		System.out.println("Please enter your choice");
 		choice = sc.nextInt();
 		switch(choice) {
-		case 1:df.DisplayFiles();
+		case 1:DisplayFiles.DisplayFiles();
 		break;
 		case 2:try {
 				sm.SubMenuList();

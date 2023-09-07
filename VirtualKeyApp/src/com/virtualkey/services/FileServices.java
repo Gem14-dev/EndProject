@@ -8,7 +8,7 @@ import java.io.IOException;
 public class FileServices {
 	
 
-	public void SearchFiles() throws Exception {
+	public static void SearchFiles() throws Exception {
 		DataInputStream dis1 = new DataInputStream(System.in);
 		String filename;
 		System.out.println("Please enter the new filename");
@@ -23,7 +23,7 @@ public class FileServices {
 			}
 	}
 
-	public void AddFile() throws IOException {
+	public static void AddFile() throws IOException {
 		
 		DataInputStream dis1 = new DataInputStream(System.in);
 		String filename;
@@ -46,23 +46,23 @@ public class FileServices {
 			fos.write(ch);
 		}
 		fos.close();
-		System.out.println("Data stored in file");
+		System.out.println("Data stored in file: " +filename);
 		return; 
 	}}
 
-	public void DeleteFile() throws Exception {
+	public static void DeleteFile() throws Exception {
 		DataInputStream dis1 = new DataInputStream(System.in);
 		String filename;
-		System.out.println("Please enter the new filename");
+		System.out.println("Please enter the filename to delete");
 		filename = dis1.readLine();
 		File file = new File(filename); 
 		
 		if (file.exists()) {
 			file.delete();
-			System.out.println("File has been deleted successfully");
+			System.out.println(filename+ " has been deleted successfully");
 			} 
 			else
-			{System.out.println("File is not found" +filename);
+			{System.out.println("File specified is not found ");
 	}
 
 }}
